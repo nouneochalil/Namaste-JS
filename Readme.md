@@ -1,0 +1,1 @@
+This repo contains my interview preparation notes on javaScript.
