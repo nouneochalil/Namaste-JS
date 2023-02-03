@@ -1,0 +1,19 @@
+-js has only 1 call stack.-> It is inside the js engine.
+-whenever a code run a global execution context(GEC) is created.-->GEC will be pushed to call stack.
+      ` WEB APIs`
+   Web APIs connect JS Engine to the Superpowers of Browser.   
+      *set Timeout()
+      *Dom APIs                       //these are not part of js.part of Browser.
+      *fetch()
+      *Local sttorage
+      *console
+      *location
+      -browser gives access to use all the super powers(web APIs) to js  engine-->window-->global object
+      -In js every code execut inside call stsck.
+      -call back function also moves to inside call stack once timer expires.
+      -cannot go directly to call stack.-> first moves to callBack queue
+      -Event loop check anything inside callback Queue.-> if yes push to callm stack.
+      -document .  ->calling the DOM API ->it fetches  something from the dom.(html source code)
+       -eventListners registers a callBack inside web API ->attaches a event to it.
+       -eventListtner will stayback in the web api till end untill and unless we close the browser.->call back alse wait.
+        -eventLoop -> 
